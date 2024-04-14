@@ -1,0 +1,36 @@
+.optionCheck {
+    display: flex;
+    flex-direction: column;
+    inline-size: 100%;
+}
+
+.optionCheck-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-end: .5rem;
+}
+
+.optionCheck-title h2 {
+    margin: 0;
+    font: var(--body1-medium);
+}
+
+.optionCheck-title i {
+    font-size: 1.5rem;
+}
+
+.optionCheck-task {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-block-end: .5rem;
+}
+
+.optionCheck-task p {
+    margin: 0;
+}
+
+.optionCheck-task i {
+    font-size: 1.5rem;
+}

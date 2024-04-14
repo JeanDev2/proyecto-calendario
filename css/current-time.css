@@ -1,0 +1,24 @@
+.currentTime {
+    block-size: 2px;
+    background-color: var(--red10);
+    inline-size: 5rem;
+    position: absolute;
+    inset-inline-start: 300px;
+    inset-block-start: 200px;
+    z-index: 2;
+}
+
+.currentTime::before{
+    content: '';
+    inline-size: 1rem;
+    block-size: 1rem;
+    border-radius: 50%;
+    background-color: var(--red10);
+    display: block;
+    transform: translateY(-50%);
+}
+
+.currentTime.day {
+    inline-size: 37rem;
+    inset-inline-start: 70px;
+}

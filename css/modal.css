@@ -1,0 +1,60 @@
+.modal {
+    max-inline-size: 28rem;
+    inline-size: 100%;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 1.0719px 30.9815px 92px rgba(0, 0, 0, 0.0425185);
+    position: absolute;
+    inset-block-start: 200px;
+    inset-inline-start: 200px;
+    margin: initial;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-inline: 3rem;
+    padding-block: 1.5rem;
+}
+
+.modal-secondary {
+    max-inline-size: 22rem;
+    max-block-size: 6.25rem;
+    block-size: 100%;
+    inline-size: 100%;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 1.0719px 30.9815px 92px rgba(0, 0, 0, 0.0425185);
+    position: absolute;
+    inset-block-start: 40%;
+    inset-inline-start: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.modal-secondary p {
+    margin: 0;
+    font: var(--body1-medium);
+    margin-block-end: 1rem;
+}
+
+.modal-actions  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal::backdrop {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.modal-secondary::backdrop {
+    background: rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+
+
+
