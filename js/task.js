@@ -40,3 +40,22 @@ function setActiveTaskCell(x, y) {
 }
 
 $taskCellList.forEach($taskCell => $taskCell.addEventListener('click', handleCreateTaskClick))
+
+const $iconSquares = document.querySelectorAll('.icon-Iconcheck-square');
+
+$iconSquares.forEach($iconSquare => {
+    $iconSquare.addEventListener('click', () => {
+        // Cambiar la clase del elemento al hacer clic
+        $iconSquare.classList.toggle('icon-Iconcheck'); // Cambia la clase a 'icon-Iconcheck' cuando se hace clic
+        $iconSquare.classList.toggle('icon-Iconcheck-square'); // Elimina la clase 'icon-Iconcheck-square' cuando se hace clic
+    });
+});
+
+const $iconChecks = document.querySelectorAll('.icon-Iconcheck');
+
+$iconChecks.forEach($iconCheck => {
+    $iconCheck.addEventListener('click', () => {
+        // Cambiar la clase del elemento al hacer clic
+        $iconCheck.classList.toggle('icon-Iconcheck-square');
+    });
+});

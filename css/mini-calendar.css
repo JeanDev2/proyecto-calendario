@@ -37,17 +37,26 @@
     line-height: var(--cellSize);
 }
 
+.miniCalendar-monthDay a{
+    line-height: var(--cellSize);
+    text-decoration: none;
+    color: var(--gray30);
+}
+
 .miniCalendar-monthDay:hover {
     background-color: var(--gray10);
     border-radius: 50%;
 }
 
-.miniCalendar-monthDay.is-selected  {
+.miniCalendar-monthDay .is-selected{
     background-color: var(--blue10);
     color: var(--white);
     border-radius: 50%;
+    padding: .5rem;
 }
 
-.miniCalendar-monthDay.is-inactive  {
+
+
+.miniCalendar-monthDay.is-inactive a {
     color: var(--gray20);
 }
